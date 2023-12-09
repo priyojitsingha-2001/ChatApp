@@ -1,7 +1,7 @@
 const socket = io('http://localhost:3000');
 const messageSection = document.querySelector('.container');
 const messageForm = document.querySelector('#send-msg');
-const messageInput = document.querySelector('.msg-input');
+const messageInput = document.querySelector('.msg-input input');
 
 const username = prompt("What is your name");
 socket.emit('user-joined', username);

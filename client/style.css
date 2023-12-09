@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -76,18 +77,28 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.msg-input,
-.send-btn {
-    padding: 20px;
-    border-radius: 50%;
-    border: none;
-    /* border: none; */
+.msg-input {
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.msg-input {
-    border-radius: 50px;
-    width: 95%;
+.msg-input input {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    font-weight: bold;
 }
+
+.msg-input button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
 
 footer {
     color: aliceblue;
