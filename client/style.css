@@ -23,10 +23,23 @@ body {
     height: 80vh;
     padding-top: 10px;
     margin: auto;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     overflow-y: scroll;
     position: relative;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 50px;
 }
 
 .overlay-div {
@@ -46,7 +59,7 @@ body {
     width: 30%;
     height: auto;
     padding: 20px 25px;
-    margin: 5px 20px;
+    margin: 5px 10px;
     border-radius: 50px;
     box-shadow: 10px 10px 7px rgb(49, 49, 49);
     clear: both;
